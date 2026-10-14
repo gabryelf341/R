@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#172554">
+<meta name="description" content="Agenda semanal de estudos do IMPA Tech, PICME e chinês.">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<title>Minha Rotina — IMPA Tech</title>
+</head>
+<body>
+<header class="top">
+  <div class="brand-icon">✓</div>
+  <div><div class="eyebrow">SEU PLANEJAMENTO</div><h1>Minha Rotina</h1><p>IMPA Tech · PICME · Chinês</p></div>
+</header>
+<main>
+  <section class="stats">
+    <article class="stat"><span>Tarefas concluídas</span><strong id="weekCount">0/18</strong><div class="progress"><i id="weekBar"></i></div><small>Progresso da semana</small></article>
+    <article class="stat"><span>Tempo realizado</span><strong id="weekTime">0h</strong><small>Atividades marcadas como feitas</small></article>
+  </section>
+  <section class="panel">
+    <div class="section-head"><div><div class="eyebrow">AGENDA</div><h2>Escolha o dia</h2></div><button class="quiet" id="todayBtn">Hoje</button></div>
+    <nav id="days" class="days" aria-label="Dias da semana"></nav>
+    <div class="day-heading"><div><h2 id="dayTitle">Segunda-feira</h2><p id="dayProgress">0 de 2 atividades concluídas</p></div><span class="percent" id="dayPercent">0%</span></div>
+    <div class="progress large"><i id="dayBar"></i></div>
+    <div id="tasks" class="tasks"></div>
+  </section>
+  <section class="panel">
+    <div class="section-head"><div><div class="eyebrow">REFLEXÃO</div><h2>Notas do dia</h2></div><span class="saved" id="savedLabel">Salvo neste aparelho</span></div>
+    <textarea id="notes" rows="4" placeholder="Dúvidas para revisar, exercícios pendentes, o que funcionou hoje..."></textarea>
+    <p class="hint">As marcações e notas são salvas automaticamente neste aparelho, mesmo quando você fecha o site.</p>
+  </section>
+  <section class="panel">
+    <div class="section-head"><div><div class="eyebrow">VISÃO GERAL</div><h2>Resumo semanal</h2></div><button id="toggleSummary" class="quiet">Ver resumo</button></div>
+    <div id="summary" hidden></div>
+  </section>
+  <section class="panel tools">
+    <h2>Seus dados</h2>
+    <p>Faça uma cópia de segurança para transferir suas marcações para outro aparelho.</p>
+    <div class="tool-buttons"><button id="exportBtn" class="secondary">Exportar backup</button><label class="secondary file-button">Importar backup<input id="importFile" type="file" accept="application/json"></label></div>
+    <button id="resetBtn" class="danger-outline">Desmarcar todas as tarefas</button>
+  </section>
+  <footer>Feito para acompanhar sua consistência — não para cobrar perfeição.</footer>
+</main>
+<script src="app.js"></script>
+</body></html>

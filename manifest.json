@@ -1,0 +1,13 @@
+{
+  "id": "./",
+  "name": "Minha Rotina — IMPA Tech",
+  "short_name": "Minha Rotina",
+  "description": "Agenda de estudos, PICME e chinês com progresso salvo no aparelho.",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f6fb",
+  "theme_color": "#172554",
+  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
